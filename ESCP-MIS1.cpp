@@ -8,7 +8,7 @@
 #define SENSOR_FIRMWARE_REG 0x12
 #define SENSOR_STATUS_REG 0x13
 
-ESCPMIS1::ESCP-MIS1() {
+ESCPMIS1::ESCPMIS1() {
     fluidDensity = 1029; // default value is for seawater
     i2cAddress = 0x28; // i2c address for parts with "01" serial number 
     atmosphericPressure = 1.01325; // standard atmospheric pressure at sea level

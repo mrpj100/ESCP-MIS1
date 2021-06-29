@@ -1,6 +1,6 @@
 #include "ESCP-MIS1.h"
 
-ESCP-MIS1 sensor;
+ESCPMIS1 sensor;
 
 void setup() {
   // put your setup code here, to run once:
