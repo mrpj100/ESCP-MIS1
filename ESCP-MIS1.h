@@ -37,9 +37,9 @@ THE SOFTWARE.
 
 #include "Arduino.h"
 
-class ESCP-MIS1 {
+class ESCPMIS1 {
     public:
-        ESCP-MIS1();
+        ESCPMIS1();
 
         /* This sets the fluid density for the depth() function in kg/m3.
            It defaults to 1029 kg/m3 for salt water. 

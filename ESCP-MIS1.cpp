@@ -8,25 +8,25 @@
 #define SENSOR_FIRMWARE_REG 0x12
 #define SENSOR_STATUS_REG 0x13
 
-ESCP-MIS1::ESCP-MIS1() {
+ESCPMIS1::ESCP-MIS1() {
     fluidDensity = 1029; // default value is for seawater
     i2cAddress = 0x28; // i2c address for parts with "01" serial number 
     atmosphericPressure = 1.01325; // standard atmospheric pressure at sea level
 }
 
-void ESCP-MIS1::setFluidDensity(float density) {
+void ESCPMIS1::setFluidDensity(float density) {
     fluidDensity = density;
 }
 
-void ESCP-MIS1::setAtmosphericPressure(float atmospheric_pressure) {
+void ESCPMIS1::setAtmosphericPressure(float atmospheric_pressure) {
     atmosphericPressure = atmospheric_pressure;
 }
 
-void ESCP-MIS1::set7bitAddress(unsigned char newaddress) {
+void ESCPMIS1::set7bitAddress(unsigned char newaddress) {
     i2cAddress = newaddress;
 }
 
-float ESCP-MIS1::pressure() {
+float ESCPMIS1::pressure() {
     float pressure_result = 0f;
      char byte_count = 0;
 
@@ -49,7 +49,7 @@ float ESCP-MIS1::pressure() {
     return pressure_result; // returns the value in bars
 }
 
-float ESCP-MIS1::temperature() {
+float ESCPMIS1::temperature() {
     float temperature_result = 0f;
      char byte_count = 0;
 
@@ -72,7 +72,7 @@ float ESCP-MIS1::temperature() {
     return temperature_result; // returns the value in Celcius
 }
 
-float ESCP-MIS1::depth() {
+float ESCPMIS1::depth() {
     float pressure_result;
     float depth_pascals;
     float depth_metres;
