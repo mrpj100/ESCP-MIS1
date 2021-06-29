@@ -27,7 +27,7 @@ void ESCPMIS1::set7bitAddress(unsigned char newaddress) {
 }
 
 float ESCPMIS1::pressure() {
-    float pressure_result = 0f;
+    float pressure_result = 0.0;
      char byte_count = 0;
 
     // first, we write to the sensor to give the address of the pressure register
@@ -50,7 +50,7 @@ float ESCPMIS1::pressure() {
 }
 
 float ESCPMIS1::temperature() {
-    float temperature_result = 0f;
+    float temperature_result = 0.0;
      char byte_count = 0;
 
     // first, we write to the sensor to give the address of the temperature register
