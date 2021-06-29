@@ -14,6 +14,10 @@ ESCPMIS1::ESCPMIS1() {
     atmosphericPressure = 1.01325; // standard atmospheric pressure at sea level
 }
 
+void ESCPMIS1::begin() {
+    Wire.begin();
+}
+
 void ESCPMIS1::setFluidDensity(float density) {
     fluidDensity = density;
 }

@@ -41,6 +41,9 @@ class ESCPMIS1 {
     public:
         ESCPMIS1();
 
+         /* call this before doing anything else*/
+        void begin();
+
         /* This sets the fluid density for the depth() function in kg/m3.
            It defaults to 1029 kg/m3 for salt water. 
            Set it to 997 for fresh water.*/

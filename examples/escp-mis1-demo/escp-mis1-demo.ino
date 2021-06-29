@@ -6,7 +6,7 @@ void setup() {
   // put your setup code here, to run once:
 
   Serial.begin(19200);
-
+  sensor.begin();
   sensor.setFluidDensity(997); // kg per cubic metre - 997 is the value for fresh water
   sensor.setAtmosphericPressure(1.000); // sets default atmospheric pressure (used for depth calculation) to 1 bar (= 1000 hPa)
 
